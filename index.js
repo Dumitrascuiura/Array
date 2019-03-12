@@ -10,14 +10,12 @@ console.log(ss.push("Last array element"));
 console.log(ss);
 
 console.log(ss.splice(3, 1));
-console.log;
 
-console.log(ss.filter(function(item){
+var newArr = (ss.filter(function(item){
    return typeof item ==="number";
-}))
-console.log;
+}));
 
-console.log(ss.map(function (a){return a*a;}));
-console.log;
+var newArr1 = newArr.map(function (a){return a*a;});
+console.log(newArr1);
 
-console.log(Math.max(...ss));
+console.log(Math.max(...newArr1));
